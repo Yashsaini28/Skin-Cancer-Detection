@@ -1,0 +1,83 @@
+<html>
+
+<head>
+  <title>Upload image to analyze</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+ 
+  <style>
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 24px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #2980B9;
+      border: none;
+      border-radius: 15px;
+    }
+    
+    .button:hover {background-color: #2471A3}
+    
+    .button:active {
+      background-color: #2471A3;
+      transform: translateY(4px);
+    }
+    
+    footer{ 
+            background-color: #2471A3 ; color:white ;text-align: justify; 
+        }
+        
+    nav{ 
+            background-color: #2471A3  ; color: white;text-align: center; 
+        }
+    </style>
+    
+</head>
+
+<nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="/" style="color: white;">Skin Cancer Detection</a>
+</nav>
+
+<body style = "background-image: url('/static/background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+
+  <div class="jumbotron" style="margin-left: 10rem;margin-right: 10rem;margin-top: 3rem;margin-bottom: 4rem; background-color: rgba(36,113,163,0.4);">
+
+  <form class="" action="result" method="post" enctype="multipart/form-data" style="text-align: center;">
+    <p>
+      <input required type="file" name="file" class="btn btn-secondary btn-lg" accept="image/png, image/gif, image/jpeg" style="margin-top: 2rem;background-color: #2980B9;">
+      <br><br><br><br>
+      <input type="submit" value="Upload" class="button">
+    </p>
+  </form>
+
+  </div>
+
+</body>
+
+<!-- Footer -->
+<footer class="page-footer" style="position: fixed; bottom: 0%; width: 100%;">
+        <div class="footer-copyright text-center py-3">Contact Us
+            <br>
+            <a href="https://github.com/abhibhargav29" style="color:white" target="_blank">Github</a>
+            •
+            <a href="https://www.facebook.com/abhi.bhargav.29/" style="color:white" target="_blank">Facebook</a>
+            •
+            <a href="https://www.linkedin.com/in/abhibhargav29-48196/" style="color:white" target="_blank">LinkedIn</a>
+        </div>
+</footer>
+<!-- Footer -->
+
+</html>
